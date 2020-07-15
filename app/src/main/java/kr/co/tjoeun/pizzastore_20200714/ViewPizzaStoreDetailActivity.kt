@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import kotlinx.android.synthetic.main.activity_view_pizza_store_detail.*
-import kotlinx.android.synthetic.main.pizza_store_list_item.*
 import kr.co.tjoeun.pizzastore_20200714.datas.PizzaStore
 import java.security.Permission
 import java.util.jar.Manifest

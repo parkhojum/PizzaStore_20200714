@@ -1,5 +1,6 @@
 package kr.co.tjoeun.pizzastore_20200714.fragments
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +14,7 @@ import kr.co.tjoeun.pizzastore_20200714.R
 class MyProfileFragment : Fragment() {
 
     //닉네임을 가지러 간다고 명시하는 숫자를 담은 변수
-    val  REQ_FOR_NICKNAME
+    val REQ_FOR_NICKNAME = 2003
 
 
     override fun onCreateView(
@@ -35,7 +36,16 @@ class MyProfileFragment : Fragment() {
         }
     }
 
+
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQ_FOR_NICKNAME){
+            if (resultCode == Activity.RESULT_OK){
+                val newNickName = data?.getStringExtra("nickName")
+                nickNameTxt.text = newNickName.toString()
+            }
+        }
+
     }
 }
