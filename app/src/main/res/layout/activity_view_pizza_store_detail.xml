@@ -30,6 +30,7 @@
         android:layout_marginTop="20dp" />
 
     <TextView
+        android:id="@+id/storeNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -50,6 +51,7 @@
         android:layout_marginTop="10dp">
 
         <TextView
+            android:id="@+id/phoneNumTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전화번호 자리"
@@ -61,6 +63,7 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/callBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전화 주문" />
